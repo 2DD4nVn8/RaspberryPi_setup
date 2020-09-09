@@ -6,6 +6,7 @@
 # install apt-get package
 apt_get_install(){
 	sudo apt-get update
+	sudo apt-get install -y git gcc make openssl python3-dev
 	sudo apt-get install -y libhdf5-dev libhdf5-serial-dev libhdf5-100
 	sudo apt-get install -y libqtgui4 libqtwebkit4 libqt4-test python3-pyqt5
 	sudo apt-get install -y libatlas-base-dev
@@ -16,8 +17,6 @@ apt_get_install(){
 install_opencv(){
 	sudo pip3 --default-timeout=1000 install opencv-python==3.4.6.27
 }
-
-
 
 START_TIME=`date +%s`
 
