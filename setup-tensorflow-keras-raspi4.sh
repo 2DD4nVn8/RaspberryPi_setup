@@ -13,7 +13,7 @@ install_tensorflow(){
   sudo apt-get install -y libatlas-base-dev
   python3 -m pip install -U six wheel mock
   wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.14.0-buster/tensorflow-1.14.0-cp37-none-linux_armv7l.whl
-  sudo pip3 install uninstall tensorflow
+  sudo pip3 uninstall tensorflow
   sudo pip3 install install tensorflow-1.14.0-cp37-none-linux_armv7l.whl
   sudo pip3 install keras==2.2.5
 }
